@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ligthGray</item>
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+
+    <style name="AppTheme.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="colorPrimary">@color/ligthGray</item>
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+</resources>

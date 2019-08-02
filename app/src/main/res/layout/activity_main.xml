@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+
+    <EditText
+        android:id="@+id/tbxText"
+        android:layout_width="341dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="104dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="105dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:text="@string/lblPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tbxText"
+        app:layout_constraintEnd_toStartOf="@+id/switchCrypt"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tbxPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnClear"
+        android:textAlignment="center"
+        android:textColor="@color/magenta"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbxText"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/lblSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lblSwitch"
+        app:layout_constraintBottom_toBottomOf="@+id/switchCrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchCrypt"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:text="@string/switchNameCrypt"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tbxPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblSwitch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tbxPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tbxText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/lblPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <Button
+        android:id="@+id/btnCopy"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:text="@string/btnCopy"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbxText"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/btnCrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCrypt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbxText" />
+
+    <Button
+        android:id="@+id/btnPaste"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:text="@string/btnPaste"
+        android:textAlignment="center"
+        android:textColor="@color/ligthGreen"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCopy"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Spinner
+        android:id="@+id/spnPassword"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tbxPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tbxPassword"
+        app:layout_constraintStart_toStartOf="@+id/tbxPassword"
+        app:layout_constraintTop_toTopOf="@+id/tbxPassword" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btnEdit"
+        app:layout_constraintEnd_toEndOf="@+id/spnPassword"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/lblPassword"
+        app:layout_constraintTop_toTopOf="@+id/spnPassword" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

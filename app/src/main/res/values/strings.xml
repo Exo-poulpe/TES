@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TES</string>
+    <string name="switchNameCrypt">Chiffrer</string>
+    <string name="switchNameDerypt">Chiffrer</string>
+    <string name="lblSwitch">Chiffrer / Déchiffrer</string>
+    <string name="lblText">Texte : </string>
+    <string name="lblPassword">Mot de passe : </string>
+    <string name="btnCrypt">Chiffrer</string>
+    <string name="btnCopy">Copie</string>
+    <string name="btnEdit">Editer</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnPaste">Coller</string>
+    <string name="crypt">Chiffrer</string>
+    <string name="decrypt">Déchiffrer</string>
+
+    <string name="Key_folder">clé</string>
+    <string name="lblKeyName">Nom de la clé</string>
+    <string name="lblKeyValue">Mot de passe</string>
+    <string name="lblKey">Clé choisis</string>
+    <string name="DEFAULT_STRING_TBXKEYVALUE">Nom de la clé</string>
+    <string name="btnDelete">Supprimer</string>
+    <string name="btnGenerate">Generer</string>
+    <string name="btnView">Cacher</string>
+
+
+    <string name="toolbar_key_change">Changement de clé</string>
+    <string name="toolbar_setings">Paramètres</string>
+
+
+    <string name="Toolbar_title">TES</string>
+    <string name="appbar_scrolling_view_behavior">TES</string>
+
+
+</resources>
+
